@@ -24,7 +24,7 @@ export default function Contact() {
         const { name, email, mobile, address, message } = user;
 
         if (name && email && mobile && address && message) {
-            const res = await fetch("https://react-firebase-contact-us-default-rtdb.firebaseio.com/firebasecontactform.json", {
+            const res = await fetch("https://reactfirebase-database-default-rtdb.firebaseio.com/contact.json", {
                 method: "POST",
                 headers: {
                     "Content-Tyep": "application/json"
